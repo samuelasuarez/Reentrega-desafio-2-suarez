@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ubuntuduro;
+    src: url(/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: ubuntufino;
+    src: url(/fonts/Ubuntu-Light.ttf);
+}
+
+.contacto {
+    text-align: center;
+    padding: 10px;
+    font-family: ubuntuduro;
+}
+
+.texto-intro {
+    font-family: ubuntuduro;
+}
+.titulo {
+    font-family: ubuntuduro;
+    text-align: center;
+    padding: 1rem;
+}
+.img-col {
+    max-width: 140px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.long-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.small-photo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.img-personas{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-family: ubuntufino;
+}
+
+.content h2 {
+    font-family: ubuntuduro;
+}
+
+.cont-personas {
+    margin-top: 100px;
+}
+.contenido-personas {
+font-family: ubuntufino;
+}
+.contenido-personas h3 {
+    font-family: ubuntuduro;
+}
+.texto-intro {
+    text-align: center;
+    margin-top: 20px;
+}
+.portada1 {
+    text-align: center;
+}
+.prod-img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: #179DF7;
+}
+
+.prod-img:hover {
+    background-color: #179DF7;
+    padding: 50px;
+}
+
+.prod-nombre {
+    
+    font-size: 30px;
+
+}
+
+.nav-item {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+
+    font-family: ubuntufino;
+}
+
+.nav-item:hover {
+    background-color: #179DF7;
+    color: white;
+    font-family: ubuntuduro;
+}
+
+.link-contacto {
+    text-decoration: none;
+    color: #179DF7;
+    font-family: ubuntuduro;
+}
+.contacto-img {
+width: 600px;
+}
+
+.contacto-img2 {
+    width: 600px;
+ margin-left: 20px;
+    }
+.footer-container {
+    margin-top: 200px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+
+.textarea {
+    width: 500px;
+    height: 120px;
+    resize: none;
+}
+
+.enviar {
+    font-family: ubuntufino;
+}
+
+.reset {
+    font-family: ubuntufino;
+}
+
+.enviar:hover {
+    font-family: ubuntuduro;
+    background-color: #179DF7;
+}
+
+.reset:hover {
+    font-family: ubuntuduro;
+    background-color: #179DF7;
+}
+
+.nosotros-titulo {
+ font-family: ubuntuduro;
+}
+
+.nosotros-texto {
+    font-family: ubuntufino;
+}
+
+.equipo {
+    max-width: 750px;
+}
+
+.componentes {
+    height: 200px;
+    width: 600px;
+}
+
+.servicios-img {
+    height: 300px;
+    width: 700px;
+}
+
+.servicios {
+    display: gird;
+    grid-template-columns: (3, 1fr);
+    gap: 2rem;
+}
+.gallery {
+    max-width: 950px;
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    grid-auto-rows: 250px;
+    justify-self: center;
+    justify-content: center;
+    gap: 1rem;
+ 
+
+}
+
+.gallery__item {
+    background-color:red ;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gallery__item--7 {
+    grid-column: span 3;
+}
+
+
+
+
+
+.gallery__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.70s ease;
+  background-color: rgba(0, 0, 0, 0.26);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}   
+
+.gallery__text {
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: ubuntuduro;
+}
+
+.gallery__item:hover .gallery__overlay {
+ transform:translateX(0%) ;
+}
+
+
+@media ( max-width : 320px) {
+.nav-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.home-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+.small-photo {
+    width: 300px;
+}
+.footer-container {
+    border-top: solid;
+}
+
+.contacto-img2 {
+    max-width: 300px;
+}
+.contenedor-personas {
+    display: flex;
+    flex-direction: column;
+}
+.img-personas {
+    width: 300px;
+}
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+}
+.textarea {
+    font-size: 13px;
+    width: 300px;
+}
+.gallery__item--1 {
+ grid-column: span 3;
+}
+.gallery__item--2 {
+    grid-column: span 3;
+   }
+   .gallery__item--3 {
+    grid-column: span 3;
+   }
+   .gallery__item--4 {
+    grid-column: span 3;
+   }
+   .gallery__item--5 {
+    grid-column: span 3;
+   }
+   .gallery__item--6 {
+    grid-column: span 3;
+   }
+   .gallery__item--7 {
+    grid-column: span 3;
+   }
+}
+
+
+@media ( max-width : 375px) {
+    .nav-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .home-contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    .small-photo {
+        width: 300px;
+    }
+    .footer-container {
+        border-top: solid;
+    }
+    
+    .contacto-img2 {
+        max-width: 300px;
+    }
+    .contenedor-personas {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-personas {
+        width: 300px;
+    }
+    .contenedor-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .textarea {
+        font-size: 13px;
+        width: 300px;
+    }
+    .gallery__item--1 {
+     grid-column: span 3;
+    }
+    .gallery__item--2 {
+        grid-column: span 3;
+       }
+       .gallery__item--3 {
+        grid-column: span 3;
+       }
+       .gallery__item--4 {
+        grid-column: span 3;
+       }
+       .gallery__item--5 {
+        grid-column: span 3;
+       }
+       .gallery__item--6 {
+        grid-column: span 3;
+       }
+       .gallery__item--7 {
+        grid-column: span 3;
+       }
+    }
+
+    
+@media ( max-width : 425px) {
+    .nav-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .home-contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    .small-photo {
+        width: 400px;
+    }
+    .footer-container {
+        border-top: solid;
+    }
+    
+    .contacto-img2 {
+        max-width: 300px;
+    }
+    .contenedor-personas {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-personas {
+        width: 400px;
+    }
+    .contenedor-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .textarea {
+        font-size: 13px;
+        width: 300px;
+    }
+    .gallery__item--1 {
+     grid-column: span 3;
+    }
+    .gallery__item--2 {
+        grid-column: span 3;
+       }
+       .gallery__item--3 {
+        grid-column: span 3;
+       }
+       .gallery__item--4 {
+        grid-column: span 3;
+       }
+       .gallery__item--5 {
+        grid-column: span 3;
+       }
+       .gallery__item--6 {
+        grid-column: span 3;
+       }
+       .gallery__item--7 {
+        grid-column: span 3;
+       }
+    }
+
